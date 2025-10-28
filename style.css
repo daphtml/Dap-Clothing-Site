@@ -1,0 +1,250 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Background & Animation */
+body {
+  background: linear-gradient(135deg, #fceabb, #f8b500);
+  animation: fadeIn 1s ease-in;
+  color: #000;
+  
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #e096f7, #b200f8);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-bar a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-bar a:hover {
+  color: #f8b500;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+  background: url('tribal-bg.jpg') center/cover no-repeat;
+  color: black;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+  border-radius: 12px;
+  animation: fadeInAbout 1.5s ease-in-out;
+}
+
+.hero h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  animation: slideDown 1s ease-out;
+}
+
+.hero p {
+  font-size: 1.2em;
+  line-height: 1.8;
+  animation: fadeInText 2s ease-in;
+}
+
+/* Subtle animations */
+@keyframes fadeInAbout {
+  from { opacity: 0; transform: scale(0.98); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeInText {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Products */
+.products {
+  padding: 40px 20px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background: lightpink;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s;
+  
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  background-color: palevioletred;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Cart Page */
+.cart-page {
+  padding: 40px 20px;
+}
+
+.cart-section {
+  max-width: 600px;
+  margin: auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.cart-total {
+  margin: 20px 0;
+  font-size: 1.2em;
+}
+
+.checkout-btn {
+  background-color: #f8b500;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: transform 0.3s;
+} 
+
+.checkout-btn:hover {
+  background-color: #e09e00;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(135deg, #e096f7, #b200f8);
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
+.foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+.back-top {
+  color: black;
+  text-decoration: none;
+}
+
+.back-top:hover {
+  text-decoration: underline;
+}
+
+.about {
+  text-align: center;
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+  background: url('tribal-bg.jpg') center/cover no-repeat;
+  color: black;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+  border-radius: 12px;
+  animation: fadeInAbout 1.5s ease-in-out;
+}
+
+.about h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  animation: slideDown 1s ease-out;
+}
+
+.about p {
+  font-size: 1.2em;
+  line-height: 1.8;
+  animation: fadeInText 2s ease-in;
+}
+
+/* Subtle animations */
+@keyframes fadeInAbout {
+  from { opacity: 0; transform: scale(0.98); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeInText {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.contact-info {
+  text-align: center;
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+  background: url('tribal-bg.jpg') center/cover no-repeat;
+  color: black;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+  border-radius: 12px;
+  animation: fadeInAbout 1.5s ease-in-out;
+}
+
+.contact-info a {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  animation: slideDown 1s ease-out;
+}
+
+.contact-info a:hover {
+  font-size: 1.2em;
+  line-height: 1.8;
+  animation: fadeInText 2s ease-in;
+}
+
+@keyframes fadeInAbout {
+  from { opacity: 0; transform: scale(0.98); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeInText {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

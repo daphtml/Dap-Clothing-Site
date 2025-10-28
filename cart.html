@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cart - DAP CLOTHING</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="cart-page">
+  <header>
+    <img src="daplogo.png" alt="dap logo" width="125" height="125" />
+    <nav class="nav-bar">
+      <a href="index.html">Home</a> 
+      <a href="cart.html">Cart</a>
+    </nav>
+  </header>
+
+  <section class="cart-section">
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+    <div class="cart-total">
+      <strong>Total: ₱<span id="cart-total">0</span></strong>
+    </div>
+    <button class="checkout-btn" onclick="checkout()">Checkout</button>
+  </section>
+
+  <footer>
+    <div class="foot" style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px;">
+      <div style="color: black;">© 2025 My D.A.P Clothing</div>
+      <div><a href="#top" style="color: black;">Back to top ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
